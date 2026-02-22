@@ -1,0 +1,328 @@
+/* ====== GENERAL STYLING ====== */
+/* Basic styling for the entire page */
+* {
+  /* selector * targets all elements */
+  margin: 0;
+  /* margin removes space outside elements */
+  padding: 0;
+  /* padding removes space inside elements */
+  box-sizing: border-box;
+  /* box-sizing includes padding and border in element width/height */
+}
+
+body {
+  /* body selector applies styles to the entire page background */
+  font-family: 'Arial', sans-serif;
+  /* font-family sets the typeface */
+  line-height: 1.6;
+  /* line-height controls space between text lines */
+  color: #333;
+  /* color sets the text color */
+  background-color: #f4f4f4;
+  /* background-color sets the background color */
+}
+
+/* ====== NAVIGATION STYLING ====== */
+nav {
+  /* nav selector styles the navigation bar */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background with gradient creates a smooth color transition */
+  padding: 1.5rem 2rem;
+  /* padding adds space inside the nav */
+  position: sticky;
+  /* position: sticky keeps nav at top when scrolling */
+  top: 0;
+  /* top: 0 positions it at the top */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow adds a shadow effect */
+  z-index: 100;
+  /* z-index controls layering (higher numbers appear on top) */
+}
+
+nav h1 {
+  /* h1 inside nav */
+  color: white;
+  /* white text */
+  margin-bottom: 1rem;
+  /* margin-bottom adds space below the h1 */
+}
+
+nav ul {
+  /* ul inside nav */
+  list-style: none;
+  /* list-style: none removes bullet points */
+  display: flex;
+  /* display: flex creates a horizontal layout */
+  gap: 2rem;
+  /* gap adds space between flex items */
+}
+
+nav a {
+  /* a (anchor/link) inside nav */
+  color: white;
+  text-decoration: none;
+  /* text-decoration: none removes underline from links */
+  font-weight: bold;
+  /* font-weight makes text thicker/bolder */
+  transition: 0.3s;
+  /* transition creates smooth animation over 0.3 seconds */
+}
+
+nav a:hover {
+  /* :hover pseudo-class triggers on mouse hover */
+  color: #ffd700;
+  /* changes color to gold on hover */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* text-shadow adds shadow behind text */
+}
+
+/* ====== SECTION STYLING ====== */
+section {
+  /* selector for all section elements */
+  max-width: 900px;
+  /* max-width limits the maximum width */
+  margin: 3rem auto;
+  /* margin: auto centers the section, 3rem top/bottom space */
+  padding: 2rem;
+  /* padding adds space inside the section */
+  background-color: white;
+  /* white background */
+  border-radius: 10px;
+  /* border-radius creates rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* adds shadow around the section */
+}
+
+/* ====== HEADING STYLING ====== */
+h2 {
+  /* h2 (second level heading) */
+  color: #667eea;
+  /* purple color */
+  margin-bottom: 1.5rem;
+  /* space below heading */
+  border-bottom: 3px solid #764ba2;
+  /* border-bottom adds a line below */
+  padding-bottom: 0.5rem;
+  /* space below text before border */
+  font-size: 2rem;
+  /* font-size sets the size of text */
+}
+
+h3 {
+  /* h3 (third level heading) */
+  color: #764ba2;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* ====== HOME SECTION ====== */
+#home {
+  /* #home targets element with id="home" */
+  text-align: center;
+  /* text-align: center centers all content */
+}
+
+#home img {
+  /* img inside home section */
+  width: 200px;
+  /* width sets element width */
+  height: 200px;
+  /* height sets element height */
+  border-radius: 50%;
+  /* border-radius: 50% creates a perfect circle */
+  border: 5px solid #667eea;
+  /* border creates an outline around image */
+  margin: 1.5rem 0;
+  /* margin adds space above and below */
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+#home p {
+  /* p inside home section */
+  font-size: 1.1rem;
+  color: #555;
+  /* lighter gray text */
+}
+
+/* ====== ABOUT SECTION ====== */
+#about ul {
+  /* ul inside about section */
+  list-style: none;
+  display: grid;
+  /* display: grid creates a multi-column layout */
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr) creates 2 equal columns */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#about li {
+  /* li (list item) inside about */
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  /* border-left creates colored left border */
+  transition: 0.3s;
+}
+
+#about li:hover {
+  background-color: #e8e8ff;
+  /* light purple background on hover */
+  transform: translateY(-5px);
+  /* transform: translateY moves element up 5 pixels */
+}
+
+/* ====== EDUCATION SECTION - TABLE STYLING ====== */
+table {
+  /* table selector styles the table */
+  width: 100%;
+  /* width: 100% makes table full width */
+  border-collapse: collapse;
+  /* border-collapse: collapse removes space between cell borders */
+  margin-top: 1.5rem;
+}
+
+thead {
+  /* thead (table head) */
+  background-color: #667eea;
+  /* purple background */
+}
+
+th {
+  /* th (table header cell) */
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  /* text-align: left aligns text to left */
+  font-weight: bold;
+}
+
+td {
+  /* td (table data cell) */
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  /* border-bottom adds line between rows */
+}
+
+tbody tr {
+  /* tr (table row) inside tbody */
+  transition: 0.3s;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+  /* light gray on hover */
+  transform: scale(1.01);
+  /* transform: scale slightly enlarges the row */
+}
+
+tbody tr:nth-child(even) {
+  /* :nth-child(even) selects every 2nd row */
+  background-color: #f9f9f9;
+  /* very light gray for alternating rows */
+}
+
+/* ====== CONTACT SECTION - FORM STYLING ====== */
+form {
+  /* form selector */
+  margin-top: 2rem;
+}
+
+label {
+  /* label selector */
+  display: block;
+  /* display: block makes label take full width */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea {
+  /* input and textarea styling */
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  /* border creates outline around inputs */
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  /* :focus pseudo-class when element is clicked/selected */
+  outline: none;
+  /* outline: none removes default focus outline */
+  border-color: #667eea;
+  /* changes border color to purple */
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+/* ====== BUTTON STYLING ====== */
+button {
+  /* button selector */
+  background-color: #667eea;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  /* border: none removes button border */
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* cursor: pointer makes cursor change to pointer on hover */
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #764ba2;
+  /* darker color on hover */
+  transform: scale(1.05);
+  /* slightly enlarge on hover */
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* ====== FOOTER STYLING ====== */
+footer {
+  /* footer selector */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+/* @media query for mobile devices */
+@media (max-width: 768px) {
+  /* @media applies styles when screen is smaller than 768px */
+  nav ul {
+    flex-direction: column;
+    /* flex-direction: column stacks items vertically */
+    gap: 1rem;
+  }
+
+  #about ul {
+    grid-template-columns: 1fr;
+    /* changes to single column on mobile */
+  }
+
+  section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

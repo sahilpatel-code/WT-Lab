@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+<html>
+<!-- Root element that contains all other elements -->
+
+<head>
+  <!-- Contains metadata and document information -->
+  <meta charset="UTF-8">
+  <!-- Defines character encoding -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes website responsive on all devices -->
+  
+  <title>RJ Fashion - Online Shopping for Clothes</title>
+  <!-- Title shown in browser tab -->
+  
+  <link rel="stylesheet" href="style.css">
+  <!-- Links external CSS file for styling -->
+</head>
+
+<body>
+  <!-- Main content of the website -->
+
+  <!-- ====== HEADER SECTION ====== -->
+  <!-- Top section with logo, search bar, and user account -->
+  <header>
+    <div class="header-top">
+      <!-- div is a container to group elements -->
+      
+      <!-- Logo Section -->
+      <div class="logo">
+        <!-- Logo area -->
+        <h1>RJ Fashion</h1>
+        <!-- Main heading for the website name -->
+        <p>Your Style, Our Fashion</p>
+      </div>
+
+      <!-- Search Bar Section -->
+      <div class="search-container">
+        <!-- Container for search functionality -->
+        <input type="text" placeholder="Search for clothes, brands...">
+        <!-- input type="text" creates a text search field -->
+        <button>Search</button>
+        <!-- button tag creates a clickable button -->
+      </div>
+
+      <!-- User Account Section -->
+      <div class="header-icons">
+        <!-- Container for user actions -->
+        <a href="#">Login</a>
+        <!-- a tag creates a hyperlink -->
+        <a href="#">Signup</a>
+        <a href="#">Cart (0)</a>
+        <!-- Cart link showing number of items -->
+      </div>
+    </div>
+
+    <!-- ====== NAVIGATION MENU ====== -->
+    <!-- Navigation bar with categories -->
+    <nav class="navbar">
+      <!-- nav tag is semantic container for navigation -->
+      <ul>
+        <!-- ul is unordered list for menu items -->
+        <li><a href="#mens">Men's Fashion</a></li>
+        <!-- li is list item -->
+        <li><a href="#womens">Women's Fashion</a></li>
+        <li><a href="#kids">Kid's Collection</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#sale">Sale</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== BANNER SECTION ====== -->
+  <!-- Main promotional banner -->
+  <section class="banner">
+    <!-- section is semantic tag for grouping content -->
+    <div class="banner-content">
+      <h2>Welcome to RJ Fashion</h2>
+      <!-- h2 is second level heading -->
+      <p>Discover Latest Fashion Trends - Up to 50% Off</p>
+      <button class="banner-btn">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- ====== CATEGORY SECTION ====== -->
+  <!-- Product categories display -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    
+    <div class="category-list">
+      <!-- Container for category items -->
+      
+      <!-- Category 1 -->
+      <div class="category-item">
+        <!-- div for each category card -->
+        <img src="mens.jpg" alt="Men's Fashion">
+        <!-- img tag displays category image -->
+        <h3>T-Shirts</h3>
+        <!-- h3 is third level heading -->
+        <a href="#mens-tshirts">Shop</a>
+        <!-- Clickable link to category -->
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category-item">
+        <img src="jeans.jpg" alt="Jeans">
+        <h3>Jeans</h3>
+        <a href="#jeans">Shop</a>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category-item">
+        <img src="dress.jpg" alt="Dresses">
+        <h3>Dresses</h3>
+        <a href="#dresses">Shop</a>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="category-item">
+        <img src="shoes.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <a href="#shoes">Shop</a>
+      </div>
+
+      <!-- Category 5 -->
+      <div class="category-item">
+        <img src="winter.jpg" alt="Winter">
+        <h3>Winter Wear</h3>
+        <a href="#winter">Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MEN'S FASHION SECTION ====== -->
+  <!-- Men's clothing products -->
+  <section id="mens" class="products-section">
+    <h2>Men's Fashion</h2>
+    
+    <div class="products-grid">
+      <!-- div with class for CSS styling -->
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <!-- div container for individual product -->
+        <img src="product1.jpg" alt="Brand T-Shirt">
+        <!-- Product image -->
+        
+        <h4>Premium Cotton T-Shirt</h4>
+        <!-- h4 is fourth level heading for product name -->
+        
+        <p class="brand">By Nike</p>
+        <!-- Brand name -->
+        
+        <p class="price">₹599 <span class="original">₹1,299</span></p>
+        <!-- span tag for inline styling of original price -->
+        
+        <p class="rating">⭐ 4.5/5 (1,234 reviews)</p>
+        <!-- Rating display -->
+        
+        <button class="add-to-cart">Add to Cart</button>
+        <!-- Button to add product to cart -->
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="product2.jpg" alt="Formal Shirt">
+        <h4>Formal Shirt - Blue</h4>
+        <p class="brand">By Peter England</p>
+        <p class="price">₹799 <span class="original">₹1,599</span></p>
+        <p class="rating">⭐ 4.2/5 (856 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="product3.jpg" alt="Sports Shorts">
+        <h4>Sports Shorts</h4>
+        <p class="brand">By Adidas</p>
+        <p class="price">₹499 <span class="original">₹999</span></p>
+        <p class="rating">⭐ 4.7/5 (2,145 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="product4.jpg" alt="Polo T-Shirt">
+        <h4>Polo T-Shirt - White</h4>
+        <p class="brand">By Puma</p>
+        <p class="price">₹649 <span class="original">₹1,399</span></p>
+        <p class="rating">⭐ 4.4/5 (1,567 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WOMEN'S FASHION SECTION ====== -->
+  <!-- Women's clothing products -->
+  <section id="womens" class="products-section">
+    <h2>Women's Fashion</h2>
+    
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="product5.jpg" alt="Kurti">
+        <h4>Ethnic Kurti</h4>
+        <p class="brand">By Biba</p>
+        <p class="price">₹699 <span class="original">₹1,499</span></p>
+        <p class="rating">⭐ 4.6/5 (3,201 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="product6.jpg" alt="Saree">
+        <h4>Cotton Saree</h4>
+        <p class="brand">By Manyavar</p>
+        <p class="price">₹1,299 <span class="original">₹2,599</span></p>
+        <p class="rating">⭐ 4.8/5 (2,890 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="product7.jpg" alt="Jeans">
+        <h4>Slim Fit Jeans</h4>
+        <p class="brand">By Lee</p>
+        <p class="price">₹749 <span class="original">₹1,699</span></p>
+        <p class="rating">⭐ 4.5/5 (2,450 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="product8.jpg" alt="Top">
+        <h4>Casual Top</h4>
+        <p class="brand">By Forever 21</p>
+        <p class="price">₹399 <span class="original">₹899</span></p>
+        <p class="rating">⭐ 4.3/5 (1,876 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== KID'S COLLECTION SECTION ====== -->
+  <!-- Children's clothing products -->
+  <section id="kids" class="products-section">
+    <h2>Kid's Collection</h2>
+    
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="product9.jpg" alt="Kid's T-Shirt">
+        <h4>Cartoon T-Shirt</h4>
+        <p class="brand">By Mothercare</p>
+        <p class="price">₹299 <span class="original">₹699</span></p>
+        <p class="rating">⭐ 4.4/5 (1,234 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="product10.jpg" alt="Kid's Shorts">
+        <h4>Shorts - Multi Color</h4>
+        <p class="brand">By Tommy Hilfiger</p>
+        <p class="price">₹399 <span class="original">₹899</span></p>
+        <p class="rating">⭐ 4.5/5 (987 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="product11.jpg" alt="Kid's Dress">
+        <h4>Princess Dress</h4>
+        <p class="brand">By Disneyland</p>
+        <p class="price">₹799 <span class="original">₹1,799</span></p>
+        <p class="rating">⭐ 4.7/5 (2,345 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="product12.jpg" alt="Kid's Shoes">
+        <h4>Sports Shoes</h4>
+        <p class="brand">By Campus</p>
+        <p class="price">₹799 <span class="original">₹1,599</span></p>
+        <p class="rating">⭐ 4.6/5 (1,567 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SALE SECTION ====== -->
+  <!-- Special offers and discounts -->
+  <section id="sale" class="products-section sale-section">
+    <h2>🔥 Flash Sale - Limited Time Offers</h2>
+    
+    <div class="products-grid">
+
+      <!-- Flash Sale Product 1 -->
+      <div class="product-card sale-product">
+        <div class="discount-badge">-60%</div>
+        <!-- div for badge showing discount percentage -->
+        <img src="sale1.jpg" alt="Sale Item">
+        <h4>Premium Winter Jacket</h4>
+        <p class="brand">By Columbia</p>
+        <p class="price">₹1,999 <span class="original">₹4,999</span></p>
+        <p class="rating">⭐ 4.9/5 (5,234 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Flash Sale Product 2 -->
+      <div class="product-card sale-product">
+        <div class="discount-badge">-70%</div>
+        <img src="sale2.jpg" alt="Sale Item">
+        <h4>Designer Hand Bag</h4>
+        <p class="brand">By Lavie Co.</p>
+        <p class="price">₹999 <span class="original">₹3,499</span></p>
+        <p class="rating">⭐ 4.5/5 (2,890 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Flash Sale Product 3 -->
+      <div class="product-card sale-product">
+        <div class="discount-badge">-50%</div>
+        <img src="sale3.jpg" alt="Sale Item">
+        <h4>Leather Shoes</h4>
+        <p class="brand">By Red Tape</p>
+        <p class="price">₹1,499 <span class="original">₹2,999</span></p>
+        <p class="rating">⭐ 4.7/5 (3,456 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Flash Sale Product 4 -->
+      <div class="product-card sale-product">
+        <div class="discount-badge">-55%</div>
+        <img src="sale4.jpg" alt="Sale Item">
+        <h4>Sunglasses</h4>
+        <p class="brand">By Fastrack</p>
+        <p class="price">₹699 <span class="original">₹1,599</span></p>
+        <p class="rating">⭐ 4.8/5 (1,234 reviews)</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PARTNERS/BRANDS SECTION ====== -->
+  <!-- Top brands available -->
+  <section class="brands">
+    <h2>Top Brands Available at RJ Fashion</h2>
+    
+    <div class="brands-list">
+      <!-- ul (unordered list) for brand names -->
+      <ul>
+        <li>Nike</li>
+        <!-- li is list item for each brand -->
+        <li>Adidas</li>
+        <li>Puma</li>
+        <li>Lee</li>
+        <li>Levi's</li>
+        <li>Biba</li>
+        <li>Forever 21</li>
+        <li>Tommy Hilfiger</li>
+        <li>Peter England</li>
+        <li>Fastrack</li>
+        <li>Campus</li>
+        <li>Red Tape</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== NEWSLETTER SECTION ====== -->
+  <!-- Email subscription -->
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get latest offers and discounts directly to your inbox</p>
+    
+    <form class="newsletter-form">
+      <!-- form tag creates input submission form -->
+      <input type="email" placeholder="Enter your email" required>
+      <!-- input type="email" validates email format -->
+      <button type="submit">Subscribe</button>
+      <!-- button type="submit" submits the form -->
+    </form>
+  </section>
+
+  <!-- ====== FOOTER SECTION ====== -->
+  <!-- Bottom of page with info and links -->
+  <footer>
+    <!-- footer is semantic tag for page footer -->
+    <div class="footer-content">
+      <!-- Container for footer content -->
+      
+      <div class="footer-section">
+        <!-- Section 1: About -->
+        <h4>About RJ Fashion</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <!-- a tag for hyperlink -->
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <!-- Section 2: Policies -->
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <!-- Section 3: Support -->
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <!-- Section 4: Social -->
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 RJ Fashion. All rights reserved.</p>
+      <!-- &copy; displays copyright symbol © -->
+      <p>Made with ❤️ for Fashion Lovers</p>
+    </div>
+  </footer>
+
+</body>
+</html>

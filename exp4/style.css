@@ -1,0 +1,555 @@
+/* ====== GENERAL STYLING ====== */
+* {
+  /* selector * targets all elements */
+  margin: 0;
+  /* removes default margin */
+  padding: 0;
+  /* removes default padding */
+  box-sizing: border-box;
+  /* includes padding and border in width/height calculation */
+}
+
+body {
+  /* body selector styles entire page */
+  font-family: 'Roboto', Arial, sans-serif;
+  /* font-family sets typeface */
+  background-color: #f0f0f0;
+  /* sets background color */
+  color: #333;
+  /* sets text color */
+}
+
+/* ====== HEADER STYLING ====== */
+header {
+  /* header tag styling */
+  background-color: #2874f0;
+  /* bright blue background */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow adds depth */
+}
+
+.header-top {
+  /* container for top header elements */
+  display: flex;
+  /* display: flex creates horizontal layout */
+  justify-content: space-between;
+  /* justify-content: space-between distributes items evenly */
+  align-items: center;
+  /* align-items: center vertically aligns items */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 2rem;
+  /* gap adds space between flex items */
+}
+
+.logo h1 {
+  /* h1 inside logo */
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.logo p {
+  /* p inside logo */
+  font-size: 0.8rem;
+  opacity: 0.9;
+  /* opacity makes text slightly transparent */
+}
+
+.search-container {
+  /* search bar container */
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  /* flex: 1 makes container expand to fill space */
+}
+
+.search-container input {
+  /* search input field */
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  /* border: none removes default border */
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.search-container button {
+  /* search button */
+  background-color: #fbbf24;
+  /* yellow button */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  /* cursor: pointer changes cursor on hover */
+  font-weight: bold;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #f59e0b;
+  /* darker yellow on hover */
+}
+
+.header-icons {
+  /* user action links */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-icons a {
+  /* links in header */
+  color: white;
+  text-decoration: none;
+  /* text-decoration: none removes underline */
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.header-icons a:hover {
+  /* hover effect */
+  opacity: 0.8;
+}
+
+/* ====== NAVIGATION BAR ====== */
+.navbar {
+  /* navbar styling */
+  background-color: #2874f0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+  /* ul inside navbar */
+  list-style: none;
+  /* list-style: none removes bullet points */
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar a {
+  /* links in navbar */
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #fbbf24;
+  /* yellow on hover */
+}
+
+/* ====== BANNER SECTION ====== */
+.banner {
+  /* banner / hero section */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* gradient background */
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin: 1rem 0;
+}
+
+.banner-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner-btn {
+  /* banner button */
+  background-color: #fbbf24;
+  color: #333;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner-btn:hover {
+  background-color: #f59e0b;
+  transform: scale(1.05);
+  /* transform: scale enlarges element */
+}
+
+/* ====== CATEGORIES SECTION ====== */
+.categories {
+  /* category section */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.category-list {
+  /* container for category items */
+  display: grid;
+  /* display: grid creates multi-column layout */
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: repeat(5, 1fr) creates 5 equal columns */
+  gap: 1.5rem;
+}
+
+.category-item {
+  /* individual category card */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  /* overflow: hidden hides content outside borders */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  /* transform: translateY moves element up */
+}
+
+.category-item img {
+  /* image in category */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  /* object-fit: cover fills space maintaining aspect ratio */
+}
+
+.category-item h3 {
+  padding: 1rem 0.5rem;
+  margin: 0;
+}
+
+.category-item a {
+  display: block;
+  background-color: #2874f0;
+  color: white;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category-item a:hover {
+  background-color: #1e5ab0;
+}
+
+/* ====== PRODUCTS SECTION ====== */
+.products-section {
+  /* section for products */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.products-section h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.products-grid {
+  /* grid layout for products */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 products per row */
+  gap: 1.5rem;
+}
+
+.product-card {
+  /* individual product card */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  /* position: relative for positioned children */
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h4 {
+  padding: 1rem 1rem 0.5rem;
+  margin: 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.product-card .brand {
+  padding: 0 1rem;
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+.product-card .price {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2874f0;
+  margin: 0.5rem 0;
+}
+
+.product-card .price .original {
+  /* original price styling */
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.product-card .rating {
+  padding: 0 1rem;
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.product-card .add-to-cart {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fbbf24;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+}
+
+.product-card .add-to-cart:hover {
+  background-color: #f59e0b;
+}
+
+/* ====== SALE PRODUCT STYLING ====== */
+.discount-badge {
+  /* discount badge on product */
+  position: absolute;
+  /* positioned relative to parent */
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  /* red background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 10;
+  /* z-index: controls layering */
+}
+
+/* ====== BRANDS SECTION ====== */
+.brands {
+  /* brands section */
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brands h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.brands-list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* 6 brands per row */
+  gap: 1rem;
+  text-align: center;
+}
+
+.brands-list li {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #2874f0;
+}
+
+/* ====== NEWSLETTER SECTION ====== */
+.newsletter {
+  /* newsletter subscription section */
+  background-color: #2874f0;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.newsletter h2 {
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-form {
+  /* newsletter form */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  /* width: 300px sets fixed width */
+}
+
+.newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #fbbf24;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #f59e0b;
+}
+
+/* ====== FOOTER STYLING ====== */
+footer {
+  /* footer styling */
+  background-color: #212121;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: #fbbf24;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-section a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fbbf24;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #444;
+  color: #bbb;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .brands-list ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+}

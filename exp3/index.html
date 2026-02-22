@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- This declares that the document is an HTML5 document -->
+<html>
+<!-- The root element that contains all other elements -->
+
+<head>
+  <!-- Contains metadata about the document that is not displayed on the page -->
+  <meta charset="UTF-8">
+  <!-- Defines the character encoding for the document -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the website responsive on different devices -->
+  
+  <title>My Portfolio</title>
+  <!-- Title that appears in the browser tab -->
+  
+  <link rel="stylesheet" href="style.css">
+  <!-- link tag links external CSS file, rel="stylesheet" indicates it's a stylesheet, href points to the CSS file -->
+</head>
+
+<body>
+  <!-- The main content of the website that is displayed on the page -->
+
+  <!-- NAVIGATION SECTION -->
+  <!-- Navigation bar to move between different sections -->
+  <nav>
+    <h1>Sahil Patel</h1>
+    <ul>
+      <!-- Unordered list for navigation links -->
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====== HOME SECTION ====== -->
+  <!-- This is the header/hero section with profile picture -->
+  <section id="home">
+    <!-- Section is a semantic tag that defines a thematic grouping of content -->
+    
+    <h2>Welcome to My Portfolio</h2>
+    <!-- h2 is a heading tag (second level heading) -->
+    
+    <!-- Profile Picture -->
+    <img src="profile.jpg" alt="Profile Picture">
+    <!-- img tag displays an image, src is the path to the image, alt is alternative text if image doesn't load -->
+    
+    <p>
+      <!-- p tag defines a paragraph -->
+      Hello! I am Sahil Patel, aspiring developer passionate about creating amazing web experiences.
+    </p>
+  </section>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <!-- This section describes the person -->
+  <section id="about">
+    
+    <h2>About Me</h2>
+    
+    <p>
+      I am a dedicated and ambitious student with a strong interest in web development and programming. 
+      I enjoy learning new technologies and solving problems through coding.
+    </p>
+    
+    <!-- List of skills -->
+    <h3>Skills</h3>
+    <!-- h3 is a third level heading -->
+    
+    <ul>
+      <!-- ul stands for unordered list (bullet points) -->
+      <li>HTML(Basic)</li>
+      <!-- li stands for list item -->
+      <li>CSS(Basic)</li>
+      <li>JavaScript</li>
+      <li>Problem Solving</li>
+      <li>Leadership</li>
+      <i>I am continuously learning and improving my skills.</i>
+    </ul>
+  </section>
+
+  <!-- ====== EDUCATION SECTION ====== -->
+  <!-- This section displays educational background -->
+  <section id="education">
+    
+    <h2>Education</h2>
+    
+    <!-- table tag creates a structured grid of rows and columns -->
+    <table border="1">
+      <!-- border="1" creates a visible border around the table -->
+      
+      <!-- thead tag contains table header rows -->
+      <thead>
+        <!-- tr tag creates a table row -->
+        <tr>
+          <!-- th tag creates a header cell (bold and centered by default) -->
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      
+      <!-- tbody tag contains table body rows (main content) -->
+      <tbody>
+        <!-- First Education Entry -->
+        <tr>
+          <!-- td tag creates a table data cell (regular cell) -->
+          <td>B.Tech Computer Science</td>
+          <td>Jain University</td>
+          <td>2024 - Present</td>
+        </tr>
+        
+        <!-- Second Education Entry -->
+        <tr>
+          <td>+2 (Senior Secondary)</td>
+          <td>KMC (Kathmandu Model College)</td>
+          <td>2022 - 2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <!-- This section contains contact information and form -->
+  <section id="contact">
+    
+    <h2>Contact Me</h2>
+    
+    <!-- Contact Information -->
+    <p>
+      <strong>Email:</strong> 
+      <a href="mailto:sahilpatel1068@gmail.com">sahilpatel1068@gmail.com</a>
+      <!-- a tag creates a hyperlink, href is the destination URL or email -->
+    </p>
+    
+    <p>
+      <strong>Phone:</strong> +977 9706371400
+    </p>
+    
+
+    <!-- Contact Form -->
+    <h3>Send Me a Message</h3>
+    
+    <form>
+      <!-- form tag creates a form for user input -->
+      
+      <label for="name">Name:</label>
+      <!-- label tag is associated with input field, 'for' attribute links to input id -->
+      
+      <input type="text" id="name" name="name" required>
+      <!-- input tag creates an input field, type="text" creates a text box, required makes it mandatory -->
+      
+      <br>
+      <!-- br tag creates a line break -->
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <!-- type="email" ensures valid email format -->
+      
+      <br>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+      <!-- textarea tag creates a multi-line text input area, rows and cols define size -->
+      
+      <br>
+      
+      <button type="submit">Submit</button>
+      <!-- button tag creates a clickable button, type="submit" submits the form -->
+    </form>
+  </section>
+
+  <!-- ====== FOOTER SECTION ====== -->
+  <!-- Footer with copyright information -->
+  <footer>
+    <!-- footer tag defines footer content at the bottom of the page -->
+    <p>&copy; 2024 Sahil Patel. All rights reserved.</p>
+    <!-- &copy; is an HTML entity that displays the copyright symbol © -->
+  </footer>
+
+</body>
+<!-- End of body tag -->
+
+</html>
+<!-- End of HTML document -->

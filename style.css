@@ -1,0 +1,477 @@
+/* ====== GENERAL STYLING ====== */
+* {
+  /* selector * targets all elements */
+  margin: 0;
+  /* removes default margin */
+  padding: 0;
+  /* removes default padding */
+  box-sizing: border-box;
+  /* includes padding and border in width/height */
+}
+
+body {
+  /* body selector styles entire page */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family sets typeface */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* gradient background for visual appeal */
+  color: #333;
+  /* sets text color */
+  line-height: 1.6;
+  /* line-height controls space between lines */
+}
+
+/* ====== HEADER / TITLE PAGE ====== */
+.report-header {
+  /* header section styling */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e57c2 100%);
+  /* multi-color gradient */
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  /* text-align: center centers all content */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  /* box-shadow adds depth effect */
+  border-bottom: 5px solid #fbbf24;
+  /* border-bottom adds colored line */
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.institution {
+  /* institution section */
+  font-size: 0.95rem;
+  opacity: 0.95;
+  /* opacity makes text slightly transparent */
+  margin-bottom: 1rem;
+}
+
+.institution h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.report-title {
+  /* main report title */
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* text-shadow adds shadow behind text */
+  letter-spacing: 2px;
+  /* letter-spacing controls space between letters */
+}
+
+.report-subtitle {
+  /* subtitle */
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fbbf24;
+  /* golden color */
+}
+
+.report-meta {
+  /* metadata section */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* transparent white background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  /* border-radius creates rounded corners */
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr) creates 2 columns */
+  gap: 1rem;
+}
+
+.report-meta p {
+  font-size: 0.95rem;
+}
+
+/* ====== TABLE OF CONTENTS SECTION ====== */
+.toc-section {
+  /* table of contents section */
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.toc-section h2 {
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.intro-text {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* ====== EXPERIMENTS SECTION ====== */
+.experiments-section {
+  /* main experiments section */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.experiments-grid {
+  /* grid layout for experiment cards */
+  display: grid;
+  /* display: grid creates multi-column layout */
+  grid-template-columns: repeat(2, 1fr);
+  /* repeat(2, 1fr) creates 2 equal columns */
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experiment-card {
+  /* individual experiment card */
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  /* overflow: hidden hides content outside borders */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+  /* transition creates smooth animation */
+  transform: translateY(0);
+  /* transform: translateY moves element */
+  border-top: 5px solid #333;
+  /* top colored border */
+}
+
+.experiment-card:hover {
+  /* :hover pseudo-class triggers on mouse hover */
+  transform: translateY(-10px);
+  /* moves up on hover */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Color variations for each card */
+.card-1 {
+  border-top-color: #667eea;
+  /* blue */
+}
+
+.card-2 {
+  border-top-color: #f093fb;
+  /* pink/magenta */
+}
+
+.card-3 {
+  border-top-color: #4facfe;
+  /* cyan/light blue */
+}
+
+.card-4 {
+  border-top-color: #43e97b;
+  /* green */
+}
+
+.card-header {
+  /* header of experiment card */
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-between distributes items */
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  /* light gradient background */
+  border-bottom: 2px solid #eee;
+}
+
+.exp-number {
+  /* experiment number badge */
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.exp-icon {
+  /* emoji icon */
+  font-size: 2rem;
+  /* font-size sets element size */
+}
+
+.experiment-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  color: #1e3c72;
+  font-size: 1.3rem;
+}
+
+.card-description {
+  /* description text */
+  padding: 0 1.5rem;
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.technologies {
+  /* technologies container */
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap allows items to wrap to next line */
+}
+
+.tech-badge {
+  /* technology badge */
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  /* border-radius: 20px creates pill shape */
+  font-size: 0.8rem;
+  border-left: 3px solid #667eea;
+  /* border-left adds colored left border */
+}
+
+.card-btn {
+  /* call-to-action button */
+  display: block;
+  margin: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  /* text-decoration: none removes underline */
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  /* cursor: pointer changes cursor on hover */
+}
+
+.card-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  /* reversed gradient on hover */
+  transform: scale(1.02);
+  /* transform: scale enlarges element */
+}
+
+/* ====== SKILLS SECTION ====== */
+.skills-section {
+  /* skills section */
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skills-section h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.skills-grid {
+  /* grid for skill boxes */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 equal columns */
+  gap: 1.5rem;
+}
+
+.skill-box {
+  /* individual skill box */
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.skill-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.skill-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.skill-4 {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.skill-box h4 {
+  /* heading in skill box */
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.skill-box ul {
+  /* list styling */
+  list-style: none;
+  /* list-style: none removes bullet points */
+}
+
+.skill-box li {
+  /* list item */
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  /* position: relative for positioning children */
+}
+
+.skill-box li:before {
+  /* :before pseudo-element adds content before element */
+  content: '✓';
+  /* content property adds text/symbols */
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ====== OBJECTIVES SECTION ====== */
+.objectives-section {
+  /* objectives section */
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.objectives-section h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.objectives-list {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+}
+
+.objectives-list ol {
+  /* ordered list styling */
+  list-style-position: inside;
+  /* list-style-position: inside keeps numbers inside */
+}
+
+.objectives-list li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  /* footer styling */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 3px solid #fbbf24;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: #fbbf24;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .report-title {
+    font-size: 2rem;
+  }
+
+  .report-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .experiments-grid {
+    grid-template-columns: 1fr;
+    /* single column on tablet */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on tablet */
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .report-header {
+    padding: 2rem 1rem;
+  }
+
+  .report-title {
+    font-size: 1.5rem;
+  }
+
+  .report-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .experiments-grid {
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    /* single column on mobile */
+  }
+
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .technologies {
+    justify-content: center;
+  }
+}
